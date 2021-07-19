@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
 
 const Post = () => {
@@ -55,7 +54,7 @@ const Post = () => {
                 </div>
             </div>
         </article>
-        <Footer />
+        
         </>
     )
 }

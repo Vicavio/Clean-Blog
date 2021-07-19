@@ -15,7 +15,7 @@ const Navigation = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto py-4 py-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a>
+                        <Link to="/" className="nav-link px-lg-3 py-3 py-lg-4" >Home</Link>
                         </li>
                         <li className="nav-item">
                         <Link  className="nav-link px-lg-3 py-3 py-lg-4" to='/about'>About</Link>

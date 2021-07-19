@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
 
 const Contact = () => {
@@ -45,7 +44,7 @@ const Contact = () => {
                                     <div className="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                 </div>
                                 <div className="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
+                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style={{height: + '12rem'}} data-sb-validations="required"></textarea>
                                     <label for="message">Message</label>
                                     <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
@@ -69,7 +68,6 @@ const Contact = () => {
                 </div>
             </div>
         </main>
-        <Footer />
         </>
     )
 }

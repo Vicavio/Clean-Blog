@@ -1,37 +1,33 @@
-
+import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
+import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Post from './pages/Post';
+import Contact from './pages/Contact';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import About from './pages/About';
-import Post from './pages/Post';
-import Contact from './pages/Contact';
 
 
 function App() {
   return (
     <>
     <Router>
-      <Header />
-      <Switch>
-        <Route>
-          <About path="/about"/>
-        </Route>
-        <Route>
-          <Post path="/post"/>
-        </Route>
-        <Route>
-          <Contact path="/contact"/>
-        </Route>
-      </Switch>
+      <Navigation />
+        <Switch>
+           <Route path="/" exact component={Home} />
+           <Route path="/about" component={About}/>
+           <Route path="/post" component={Post}/>
+           <Route path="/contact" component={Contact}/>
+           
+        </Switch>
+      <Footer />
     </Router> 
-    <Main />
-    <Footer />
+    
     </>
   );
 }
